@@ -21,3 +21,11 @@ h2
     text-shadow: forestgreen;
     text-align: center;
 }
+
+h3
+{
+    color: darkred;
+    text-decoration: darkviolet;
+    text-shadow: forestgreen;
+    text-align: center;
+}
