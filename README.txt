@@ -1,4 +1,4 @@
-Bonjour,
+Bienvenue!
 
 Ceci est mon deuxième projet dans le cadre d'une formation Développeur Web de 6 mois chez Open Classrooms.
 
