@@ -1,12 +1,20 @@
 p
 {
-    color: darkred;
+    color: green;
     text-decoration: darkviolet;
     text-shadow: forestgreen;
     text-align: center;
 }
 
 h1
+{
+    color: darkred;
+    text-decoration: darkviolet;
+    text-shadow: forestgreen;
+    text-align: center;
+}
+
+h2
 {
     color: darkred;
     text-decoration: darkviolet;
