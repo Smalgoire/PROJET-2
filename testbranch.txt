@@ -1,0 +1,2 @@
+On essaye d'utiliser le système de branche pour se familiariser avec les bonnes pratiques
+même si ça sert pas à grand chose dans un projet de débutant comme celui ci :).
