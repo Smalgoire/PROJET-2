@@ -1,31 +1,31 @@
-p
-{
-    color: green;
-    text-decoration: darkviolet;
-    text-shadow: forestgreen;
-    text-align: center;
+   
+*, *:before, *:after {
+   /* box-sizing est appliqué à tous les éléments */
+   /* :before & :after are used to apply css properties JUST before/after the content WITHIN the matching element. */
+    box-sizing: border-box;
+   /* Utilisation d'un moyen alternatif pour gérer les box ==> box-sizing */
+   /* Border-box : les largeur et hauteur spécifiées sont celles de l'élément dans son ensemble,
+      en conséquence les dimensions du padding ou des bordures viennent diminuer les dimensions du contenu. */
+  }
+
+   
+  @font-face { /* Gestion police du texte */
+    font-family: 'Raleway';
+    src: url('../assets/polices/Raleway-Regular.ttf');
+  }
+
+  * {
+      font-family: 'Raleway', Impact, "Arial Black", Arial, Verdana, sans-serif;
+  }
+
+/*Gestion des icones Font Awesome*/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../assets/icones/webfonts/fa-solid-900.ttf') format('truetype');
 }
 
-h1
-{
-    color: darkred;
-    text-decoration: darkviolet;
-    text-shadow: forestgreen;
-    text-align: center;
-}
-
-h2
-{
-    color: darkred;
-    text-decoration: darkviolet;
-    text-shadow: forestgreen;
-    text-align: center;
-}
-
-h3
-{
-    color: darkred;
-    text-decoration: darkviolet;
-    text-shadow: forestgreen;
-    text-align: center;
+.heart_icon:after {
+  content: "\f004"; /* Code de l'icone*/
+  font-family: FontAwesome;
+  
 }
