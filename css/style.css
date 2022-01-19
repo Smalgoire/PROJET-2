@@ -1,21 +1,25 @@
    
 *, *:before, *:after {
    /* box-sizing est appliqué à tous les éléments */
-   /* :before & :after are used to apply css properties JUST before/after the content WITHIN the matching element. */
+   /* :before & :after sont utilisés pour appliquer les propriétés CSS juste avant/après le contenu à l'intérieur de l'élément correspondant. */
     box-sizing: border-box;
    /* Utilisation d'un moyen alternatif pour gérer les box ==> box-sizing */
    /* Border-box : les largeur et hauteur spécifiées sont celles de l'élément dans son ensemble,
       en conséquence les dimensions du padding ou des bordures viennent diminuer les dimensions du contenu. */
   }
 
+  body { /* Enlève la petite marge présente de base dans les navigateurs */
+    margin: 0;
+  }
    
   @font-face { /* Gestion police du texte */
     font-family: 'Raleway';
     src: url('../assets/polices/Raleway-Regular.ttf');
   }
 
-  * {
+  body {
       font-family: 'Raleway', Impact, "Arial Black", Arial, Verdana, sans-serif;
+      
   }
 
 /*Gestion des icones Font Awesome*/
@@ -25,7 +29,152 @@
 }
 
 .heart_icon:after {
-  content: "\f004"; /* Code de l'icone*/
+  content: "\f004"; /* Code de l'icone dans la base FontAwesome*/
   font-family: FontAwesome;
   
 }
+
+#container { /* Tout le contenu de la page */
+  width: auto; 
+  min-width: 480px;
+  
+}
+
+ul {
+  list-style-type: none; /* J'enlève les puces sur toute les listes */
+}
+
+a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
+  text-decoration: none; 
+  color: inherit;
+}
+
+/* Header */
+
+.bloc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px 0px 20px;
+}
+
+#nav-ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0; /* suppression décalage des li par rapport au ul */
+  padding: 0; /* suppression décalage des li par rapport au ul */
+}
+
+#lodging-anchor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 180px;
+  
+}
+
+#activities-anchor { 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 75px;
+  width: 125px;
+  
+}
+
+.hover-blueline:hover { /* gestion de la couleur et de la bordure affichée au survol souris */
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
+}
+
+#logo-booki { /* réduction de la taille de l'image sans perdre les proportions */
+  width:100px; 
+  height: auto;
+}
+
+@media all and (max-width: 992px) /* Pour les écrans (Tablettes) dont la largeur ne dépasse pas 992px. */
+{
+  .bloc-header {
+    flex-direction: column;
+   }
+
+  #logo-booki {
+    width: 140px;
+    padding: 15px 0px 15px 0px;
+   }
+
+  nav {
+    width: 100%;
+   }
+
+  #lodging-anchor {
+    width: 50%; 
+    height: 60px;
+    font-size: 140%;
+   }
+
+  #activities-anchor {
+    width: 50%; 
+    height: 60px;
+    font-size: 140%;
+   }
+
+  .hover-blueline:hover { /* gestion de la couleur et de la bordure affichée au survol souris */
+    color: #0065FC;
+    border-top: none;
+    border-bottom: 4px solid #0065FC;
+  }  
+}
+
+@media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
+{
+  .bloc-header {
+    flex-direction: column;
+   }
+
+  #logo-booki {
+    width: 140px;
+    padding: 15px 0px 15px 0px;
+   }
+
+  nav {
+    width: 100%;
+   }
+
+  #lodging-anchor {
+    width: 50%; 
+    height: 55px;
+    font-size: 130%;
+   }
+
+  #activities-anchor {
+    width: 50%; 
+    height: 55px;
+    font-size: 130%;
+   }
+
+  .hover-blueline:hover { /* gestion de la couleur et de la bordure affichée au survol souris */
+    color: #0065FC;
+    border-top: none;
+    border-bottom: 4px solid #0065FC;
+  }  
+  
+}
+
+
+
+/* Main */
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
