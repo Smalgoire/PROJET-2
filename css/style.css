@@ -14,7 +14,7 @@
    
   @font-face { /* Gestion police du texte */
     font-family: 'Raleway';
-    src: url('../assets/polices/Raleway-Regular.ttf');
+    src: url('../assets/polices/Raleway-Medium.ttf');
   }
 
   body {
@@ -28,11 +28,6 @@
   src: url('../assets/icones/webfonts/fa-solid-900.ttf') format('truetype');
 }
 
-.heart_icon:after {
-  content: "\f004"; /* Code de l'icone dans la base FontAwesome*/
-  font-family: FontAwesome;
-  
-}
 
 #container { /* Tout le contenu de la page */
   width: auto; 
@@ -51,7 +46,7 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
 
 /* Header */
 
-.bloc-header {
+.header-bloc {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,7 +90,7 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
 
 @media all and (max-width: 992px) /* Pour les écrans (Tablettes) dont la largeur ne dépasse pas 992px. */
 {
-  .bloc-header {
+  .header-bloc {
     flex-direction: column;
    }
 
@@ -129,7 +124,7 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
 
 @media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
 {
-  .bloc-header {
+  .header-bloc {
     flex-direction: column;
    }
 
@@ -162,16 +157,171 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
   
 }
 
-
-
 /* Main */
 
+main {
+  margin: 15px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Partie formulaire recherche */
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+#search-bloc {
+  display: flex;
+  flex-direction: column;
+}
+
+#search-bloc * {
+  margin: 4px;
+}
+
+#element-form {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  position: relative;
+  right: 16px;
+  height: 60px;
+  width: 250px;
+  padding-left: 15px;
+}
+
+input[type="text"]
+{
+    font-size:20px;
+    border:2px solid #F2F2F2;
+}
+
+::placeholder { /* Un pseudo-élément est un mot-clé ajouté à un sélecteur qui permet de mettre en forme certaines parties de l'élément ciblé par la règle. */
+  font-weight: 600;
+  font-size: 100%;
+  text-align: left; 
+}
+
+.mapmarker-container {
+  height: 60px;
+  width: 60px;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.map-marker:after {
+  content: "\f3c5"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+}
+
+#search-button {
+  position: relative;
+  right: 33px;
+  height: 60px;
+  width: 150px;
+  font-weight: bold;
+  color: white;
+  background-color: #0065FC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 85%;
+  font-size: 120%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  br {
+    display: none; /* Annule les retours ligne pour les moyens et grands ecran */
+  }
+}
+
+@media all and (max-width: 992px) /* Pour les écrans (Tablettes) dont la largeur ne dépasse pas 992px. */
+{
+  #search-bloc {
+    align-items: center;   
+  }
+
+  #search-bloc p {
+    font-size: 135%;
+  }
+  
+  #search-bloc h1 {
+    font-size: 170%;
+  }
+  
+  input {
+    width: 325px;
+    padding-left: 25px;
+  }
+
+}
+
+@media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
+{
+  #search-bloc {
+    align-items: center;   
+  }
+  
+  #search-bloc p {
+    font-size: 110%;
+  }
+  
+  #search-button {
+    display: none;
+  }
+
+  .loop-button-container {
+    position: relative;
+    right: 42px;
+    height: 60px;
+    width: 60px;
+    background-color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .loop-button:after {
+    content: "\f002"; /* Code de l'icone dans la base FontAwesome*/
+    font-family: FontAwesome;
+    font-size: 21px;
+    color: white;
+  }
+
+  input {
+    width: 275px;
+    padding-left: 25px;
+  }
+
+  #element-form {
+    position: relative;
+    left: 30px;
+    margin-top: 15px;
+  }
+
+  #search-bloc p {
+    font-size: 123%;
+  }
+  
+  #search-bloc h1 {
+    font-size: 170%;
+    margin-bottom: 15px;
+  }
 
 
-
-
-
-
+}
 
 
 
