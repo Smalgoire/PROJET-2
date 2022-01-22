@@ -323,6 +323,170 @@ input[type="text"]
 
 }
 
+/* Partie Filtres recherche */
+
+#filter-bloc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 13px;
+  
+}
+
+#filter-bloc p {
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 120%;
+}
+
+#filters {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.filtericons-container {
+  width: auto;
+  height: 60px;
+  border: 4px solid #F2F2F2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 125%;
+  padding-right: 20px;
+  margin-left: 25px;
+  margin-top: 3px;
+}
+
+#eco-icon:after {
+  content: "\f53a"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+}
+
+#kid-icon:after {
+  content: "\f1ae"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+}
+
+#love-icon:after {
+  content: "\f004"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+}
+
+#dog-icon:after {
+  content: "\f6d3"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+}
+
+.ico-background {
+  background-color: #DEEBFF;
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  position: relative;
+  right: 5px;
+}
+
+.info {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#info-icon:after {
+  content: "\f129"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+  font-size: 15px;
+}
+
+.info-ico-background {
+  height: 30px;
+  width: 30px;
+  border: 3px solid #F2F2F2;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+@media all and (max-width: 992px) /* Pour les écrans (Tablettes) dont la largeur ne dépasse pas 992px. */
+{
+  #filter-bloc {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+  }
+
+  #filter-bloc p {
+    font-size: 150%;
+    margin-left: 25px;
+    margin-bottom: 0;
+  }
+  
+  #filters {
+    flex-wrap: wrap;
+  }
+
+  .filtericons-container {
+    margin-top: 15px;
+    font-size: 125%;
+  }
+}
+
+@media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
+{
+  
+  #filter-bloc {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+  }
+
+  #filter-bloc p {
+    font-size: 150%;
+    margin-left: 15px;
+    margin-bottom: 0;
+  }
+  
+  #filters {
+    flex-wrap: wrap;
+  }
+
+  .filtericons-container {
+    margin-top: 15px;
+    font-size: 125%;
+    margin-left: 15px;
+  }
+
+  .info {
+    font-size: 120%;
+  }
+
+
+}
+
+
+
 
 
 
