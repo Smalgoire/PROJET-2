@@ -363,6 +363,10 @@ input[type="text"]
   margin-top: 3px;
 }
 
+.filtericons-container:hover { /* changement d'apparence des filtres au survol souris */
+  background-color: #DEEBFF;
+}
+
 #eco-icon:after {
   content: "\f53a"; /* Code de l'icone dans la base FontAwesome*/
   font-family: FontAwesome;
@@ -481,14 +485,68 @@ input[type="text"]
   .info {
     font-size: 120%;
   }
-
-
 }
 
+/* Partie Principale "Hébergement à Marseille" */
 
+.lodgingcards-bloc {
+  display: flex;
+  width: 66%;
+  background-color: #F2F2F2;
+  margin-top: 25px;
+}
 
+#lodging-cards {
+  display: flex;
+}
 
+.lodginginfos-container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  background-color: white;
+  padding: 5px 5px 10px 5px;
+  margin: 0px 20px 20px 20px;
+}
 
+.lodgings-img-container {
+  display: flex;
+  width: 100%;
+  height: 60%;
+}
 
+.lodgings-text-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px 5px 5px;
+}
+
+.lodgings-text-container h3,p,span {
+  margin: 0;
+  margin-top: 3px;
+}
+
+.lodgings-img-container img {
+  width: 100%;
+  object-fit: cover; 
+  /* (object-fit: cover) ==> Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu.
+  La taille réelle est calculée pour couvrir la zone décrite par la hauteur et la largeur de l'élément.
+  Si les ratios de l'objet et de la boîte ne correspondent pas, le contenu remplacé sera rogné.*/
+}
+
+.bluestar-ico:before {
+  content: "\f005" "\f005" "\f005" "\f005"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+}
+
+.greystar-ico:after {
+  content:"\f005"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #bfbfbf;
+}
 
 /* footer */
