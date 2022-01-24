@@ -15,7 +15,7 @@
     <body>
     
      <div id="container" >
-      <header class="bloc-header" >
+      <header class="header-bloc" >
        <img id="logo-booki" src="assets/logo/Booki.png" alt="Logo site Booki" >
        <nav>
         <ul id="nav-ul">
@@ -23,20 +23,60 @@
             <li id="activities-anchor" class="hover-blueline"> <a href="#A DETERMINER">Activités</a></li>
         </ul>
        </nav>
-
-
       </header>
 
-
       <main>
-          
+        <section>
+            <div id="search-bloc">
+                <h1>Trouvez votre hébergement<br /> pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <div id="element-form">
+                    <div class="mapmarker-container"><span class="map-marker"></span></div>
+                    <form method="post" action="">
+                        <p>
+                            <input type="text" id="search" placeholder="Marseille, France"/>
+                        </p>
+                    </form>
+                    <span id="search-button">Rechercher</span>
+                    <div class="loop-button-container"><span class="loop-button"></span></div>
+                </div>
+            </div>
+            <div id="filter-bloc">
+                <p>Filtres</p>     
+                <div id="filters">
+                    <div class="filtericons-container"><span class="ico-background"><span id="eco-icon"></span></span>Économique</div>
+                    <div class="filtericons-container"><span class="ico-background"><span id="kid-icon"></span></span>Familial</div>
+                    <div class="filtericons-container"><span class="ico-background"><span id="love-icon"></span></span>Romantique</div>
+                    <div class="filtericons-container"><span class="ico-background"><span id="dog-icon"></span></span>Animaux autorisés</div>
+                </div>
+            </div>
+            <div class="info"><span class="info-ico-background"><span id="info-icon"></span></span><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
+        </section>            
+        <section class="lodgingcards-bloc">
+            <h1>Hébergements à Marseille</h1>
+            <div id="lodging-cards">
+                <div class="lodginginfos-container">
+                    <div class="lodgings-img-container">
+                        <img id="large-cannebiere-img" src="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image Auberge La Cannebière" >
+                    </div>
+                    <div class="lodgings-text-container">
+                        <h3>Auberge La Cannebière</h3>
+                        <p>Nuit à partir de 25€</p>
+                        <span class="bluestar-ico"><span class="greystar-ico"></span></span>
+                    </div>
+                </div>
 
 
+
+            </div>
+
+
+        </section>
       </main>
 
       <footer>
 
-
+    
 
       </footer>
 

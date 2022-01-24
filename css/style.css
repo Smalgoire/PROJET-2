@@ -14,7 +14,7 @@
    
   @font-face { /* Gestion police du texte */
     font-family: 'Raleway';
-    src: url('../assets/polices/Raleway-Regular.ttf');
+    src: url('../assets/polices/Raleway-Medium.ttf');
   }
 
   body {
@@ -28,11 +28,6 @@
   src: url('../assets/icones/webfonts/fa-solid-900.ttf') format('truetype');
 }
 
-.heart_icon:after {
-  content: "\f004"; /* Code de l'icone dans la base FontAwesome*/
-  font-family: FontAwesome;
-  
-}
 
 #container { /* Tout le contenu de la page */
   width: auto; 
@@ -51,7 +46,7 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
 
 /* Header */
 
-.bloc-header {
+.header-bloc {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,7 +90,7 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
 
 @media all and (max-width: 992px) /* Pour les écrans (Tablettes) dont la largeur ne dépasse pas 992px. */
 {
-  .bloc-header {
+  .header-bloc {
     flex-direction: column;
    }
 
@@ -129,7 +124,7 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
 
 @media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
 {
-  .bloc-header {
+  .header-bloc {
     flex-direction: column;
    }
 
@@ -162,19 +157,396 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
   
 }
 
-
-
 /* Main */
 
+main {
+  margin: 15px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Partie formulaire recherche */
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+#search-bloc {
+  display: flex;
+  flex-direction: column;
+}
+
+#search-bloc * {
+  margin: 4px;
+}
+
+#element-form {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  position: relative;
+  right: 16px;
+  height: 60px;
+  width: 250px;
+  padding-left: 15px;
+}
+
+input[type="text"]
+{
+    font-size:20px;
+    border:2px solid #F2F2F2;
+}
+
+::placeholder { /* Un pseudo-élément est un mot-clé ajouté à un sélecteur qui permet de mettre en forme certaines parties de l'élément ciblé par la règle. */
+  font-weight: 600;
+  font-size: 100%;
+  text-align: left; 
+}
+
+.mapmarker-container {
+  height: 60px;
+  width: 60px;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.map-marker:after {
+  content: "\f3c5"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+}
+
+#search-button {
+  position: relative;
+  right: 33px;
+  height: 60px;
+  width: 150px;
+  font-weight: bold;
+  color: white;
+  background-color: #0065FC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 85%;
+  font-size: 120%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  br {
+    display: none; /* Annule les retours ligne pour les moyens et grands ecran */
+  }
+}
+
+@media all and (max-width: 992px) /* Pour les écrans (Tablettes) dont la largeur ne dépasse pas 992px. */
+{
+  #search-bloc {
+    align-items: center;   
+  }
+
+  #search-bloc p {
+    font-size: 135%;
+  }
+  
+  #search-bloc h1 {
+    font-size: 170%;
+  }
+  
+  input {
+    width: 325px;
+    padding-left: 25px;
+  }
+
+}
+
+@media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
+{
+  #search-bloc {
+    align-items: center;   
+  }
+  
+  #search-bloc p {
+    font-size: 110%;
+  }
+  
+  #search-button {
+    display: none;
+  }
+
+  .loop-button-container {
+    position: relative;
+    right: 42px;
+    height: 60px;
+    width: 60px;
+    background-color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .loop-button:after {
+    content: "\f002"; /* Code de l'icone dans la base FontAwesome*/
+    font-family: FontAwesome;
+    font-size: 21px;
+    color: white;
+  }
+
+  input {
+    width: 275px;
+    padding-left: 25px;
+  }
+
+  #element-form {
+    position: relative;
+    left: 30px;
+    margin-top: 15px;
+  }
+
+  #search-bloc p {
+    font-size: 123%;
+  }
+  
+  #search-bloc h1 {
+    font-size: 170%;
+    margin-bottom: 15px;
+  }
 
 
+}
 
+/* Partie Filtres recherche */
 
+#filter-bloc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 13px;
+  
+}
 
+#filter-bloc p {
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 120%;
+}
 
+#filters {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
 
+}
 
+.filtericons-container {
+  width: auto;
+  height: 60px;
+  border: 4px solid #F2F2F2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 125%;
+  padding-right: 20px;
+  margin-left: 25px;
+  margin-top: 3px;
+}
 
+.filtericons-container:hover { /* changement d'apparence des filtres au survol souris */
+  background-color: #DEEBFF;
+}
 
+#eco-icon:after {
+  content: "\f53a"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+}
+
+#kid-icon:after {
+  content: "\f1ae"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+}
+
+#love-icon:after {
+  content: "\f004"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+}
+
+#dog-icon:after {
+  content: "\f6d3"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+}
+
+.ico-background {
+  background-color: #DEEBFF;
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  position: relative;
+  right: 5px;
+}
+
+.info {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#info-icon:after {
+  content: "\f129"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+  font-size: 15px;
+}
+
+.info-ico-background {
+  height: 30px;
+  width: 30px;
+  border: 3px solid #F2F2F2;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+@media all and (max-width: 992px) /* Pour les écrans (Tablettes) dont la largeur ne dépasse pas 992px. */
+{
+  #filter-bloc {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+  }
+
+  #filter-bloc p {
+    font-size: 150%;
+    margin-left: 25px;
+    margin-bottom: 0;
+  }
+  
+  #filters {
+    flex-wrap: wrap;
+  }
+
+  .filtericons-container {
+    margin-top: 15px;
+    font-size: 125%;
+  }
+}
+
+@media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
+{
+  
+  #filter-bloc {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+  }
+
+  #filter-bloc p {
+    font-size: 150%;
+    margin-left: 15px;
+    margin-bottom: 0;
+  }
+  
+  #filters {
+    flex-wrap: wrap;
+  }
+
+  .filtericons-container {
+    margin-top: 15px;
+    font-size: 125%;
+    margin-left: 15px;
+  }
+
+  .info {
+    font-size: 120%;
+  }
+}
+
+/* Partie Principale "Hébergement à Marseille" */
+
+.lodgingcards-bloc {
+  display: flex;
+  width: 66%;
+  background-color: #F2F2F2;
+  margin-top: 25px;
+}
+
+#lodging-cards {
+  display: flex;
+}
+
+.lodginginfos-container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  background-color: white;
+  padding: 5px 5px 10px 5px;
+  margin: 0px 20px 20px 20px;
+}
+
+.lodgings-img-container {
+  display: flex;
+  width: 100%;
+  height: 60%;
+}
+
+.lodgings-text-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px 5px 5px;
+}
+
+.lodgings-text-container h3,p,span {
+  margin: 0;
+  margin-top: 3px;
+}
+
+.lodgings-img-container img {
+  width: 100%;
+  object-fit: cover; 
+  /* (object-fit: cover) ==> Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu.
+  La taille réelle est calculée pour couvrir la zone décrite par la hauteur et la largeur de l'élément.
+  Si les ratios de l'objet et de la boîte ne correspondent pas, le contenu remplacé sera rogné.*/
+}
+
+.bluestar-ico:before {
+  content: "\f005" "\f005" "\f005" "\f005"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #0065FC;
+}
+
+.greystar-ico:after {
+  content:"\f005"; /* Code de l'icone dans la base FontAwesome*/
+  font-family: FontAwesome;
+  font-size: 21px;
+  color: #bfbfbf;
+}
 
 /* footer */
