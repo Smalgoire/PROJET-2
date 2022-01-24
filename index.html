@@ -9,14 +9,19 @@
         <link rel="stylesheet" href="css/normalize.css" /><!-- Chargement du fichier Css associé-->
         <link rel="stylesheet" href="css/style.css" /><!-- Chargement du fichier Css associé-->
         <link rel="stylesheet" href="assets/icones/css/all.css" /> <!--Chargement icones Font Awesome -->
-        <title>Booki</title> <!-- Très important, c'est ce qui s'affiche dans les résultats de recherche.-->
+        <title>Booki.com</title> <!-- Très important, c'est ce qui s'affiche dans les résultats de recherche.-->
     </head>
 
     <body>
     
      <div id="container" >
       <header class="header-bloc" >
-       <img id="logo-booki" src="assets/logo/Booki.png" alt="Logo site Booki" >
+        <picture>
+            <source media="(max-width: 768px)" srcset="assets/logo/Booki.png">
+            <img id="logo-booki" src="assets/logo/Booki@3x.png" alt="Logo site Booki" >
+            <!-- Par défaut je charge le logo correspondant à une résolution pour Desktop et 
+            je m'adapte pour les mobiles avec une plus faible résolution pour le logo-->
+        </picture>         
        <nav>
         <ul id="nav-ul">
             <li id="lodging-anchor" class="hover-blueline"> <a href="#A DETERMINER">Hébergements</a></li> <!-- Une id pour chaque ancre et une classe pour gérer le liseret bleu au survol souris */ -->
@@ -55,19 +60,114 @@
         <section class="lodgingcards-bloc">
             <h1>Hébergements à Marseille</h1>
             <div id="lodging-cards">
+              <div id="topline-cards"> 
                 <div class="lodginginfos-container">
-                    <div class="lodgings-img-container">
-                        <img id="large-cannebiere-img" src="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image Auberge La Cannebière" >
-                    </div>
+                    <a href="#" class="clickable-card">
+                    <picture class="lodgings-img-container">
+                            <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <img src="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+                            <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
+                            je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
+                    </picture>     
                     <div class="lodgings-text-container">
                         <h3>Auberge La Cannebière</h3>
-                        <p>Nuit à partir de 25€</p>
+                        <p>Nuit à partir de <strong>25€</strong></p> <!-- balise strong pour mise en avant d'un prix attractif -->
                         <span class="bluestar-ico"><span class="greystar-ico"></span></span>
                     </div>
+                    </a>
+                </div>
+                <div class="lodginginfos-container">
+                    <a href="#" class="clickable-card">
+                    <picture class="lodgings-img-container">
+                            <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <img src="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+                            <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
+                            je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
+                    </picture>     
+                    <div class="lodgings-text-container">
+                        <h3>Auberge La Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p> <!-- balise strong pour mise en avant d'un prix attractif -->
+                        <span class="bluestar-ico"><span class="greystar-ico"></span></span>
+                    </div>
+                    </a>
+                </div>
+                <div class="lodginginfos-container">
+                    <a href="#" class="clickable-card">
+                    <picture class="lodgings-img-container">
+                            <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <img src="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+                            <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
+                            je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
+                    </picture>     
+                    <div class="lodgings-text-container">
+                        <h3>Auberge La Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p> <!-- balise strong pour mise en avant d'un prix attractif -->
+                        <span class="bluestar-ico"><span class="greystar-ico"></span></span>
+                    </div>
+                    </a>
+                  </div> 
+                </div>
+              <div id="botline-cards"> 
+                <div class="lodginginfos-container">
+                    <a href="#" class="clickable-card">
+                    <picture class="lodgings-img-container">
+                            <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <img src="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+                            <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
+                            je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
+                    </picture>     
+                    <div class="lodgings-text-container">
+                        <h3>Auberge La Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p> <!-- balise strong pour mise en avant d'un prix attractif -->
+                        <span class="bluestar-ico"><span class="greystar-ico"></span></span>
+                    </div>
+                    </a>
+                </div>
+                <div class="lodginginfos-container">
+                    <a href="#" class="clickable-card">
+                    <picture class="lodgings-img-container">
+                            <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <img src="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+                            <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
+                            je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
+                    </picture>     
+                    <div class="lodgings-text-container">
+                        <h3>Auberge La Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p> <!-- balise strong pour mise en avant d'un prix attractif -->
+                        <span class="bluestar-ico"><span class="greystar-ico"></span></span>
+                    </div>
+                    </a>
+                </div>
+                <div class="lodginginfos-container">
+                    <a href="#" class="clickable-card">
+                    <picture class="lodgings-img-container">
+                            <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <img src="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+                            <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
+                            je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
+                    </picture>     
+                    <div class="lodgings-text-container">
+                        <h3>Auberge La Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p> <!-- balise strong pour mise en avant d'un prix attractif -->
+                        <span class="bluestar-ico"><span class="greystar-ico"></span></span>
+                    </div>
+                    </a>
+                  </div>  
                 </div>
 
-
-
+                
             </div>
 
 
