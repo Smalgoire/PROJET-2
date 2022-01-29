@@ -14,12 +14,13 @@
    
   @font-face { /* Gestion police du texte */
     font-family: 'Raleway';
-    src: url('../assets/polices/Raleway-Regular.ttf');
+    src: url('../assets/polices/Raleway-Regular.ttf') format('truetype');
+
   }
 
   @font-face { /* Gestion police du texte */
     font-family: 'RalewayBold';
-    src: url('../assets/polices/Raleway-SemiBold.ttf');
+    src: url('../assets/polices/Raleway-SemiBold.ttf') format('truetype');
   }
 
   body {
@@ -168,7 +169,7 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
 /* Main */
 
 main {
-  margin: 15px 20px 20px 20px;
+  margin: 15px 50px 20px 50px;
   display: flex;
   flex-direction: column;
 }
@@ -833,6 +834,202 @@ a.clickable-card { /* Rendre toute la div clickable */
     padding: 0px 35px 0px 35px;
   }
 }
+
+/* Partie Activités */
+
+.activities-bloc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 25px 0px 25px 0px;
+  
+}
+
+#activities-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 95%;
+  font-weight: bold;
+}
+
+#activities-cards {
+  display: flex;
+  height: 550px;
+}
+
+.vieuxport-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0px 45px 0px 0px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px #bfbfbf; /* offset-x | offset-y | blur-radius | color */
+}
+
+#activities-group1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  /* Note : J'ai perdu beaucoup de temps à essayer de gérer des marges en gardant les proportions alors qu'il suffisait
+  de disposer les eléments avec flexbox ==> justify-content: space-between....!@!+=!... */
+  margin: 0px 45px 0px 0px;
+}
+
+#activities-group2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  /* Note : J'ai perdu beaucoup de temps à essayer de gérer des marges en gardant les proportions alors qu'il suffisait
+  de disposer les eléments avec flexbox ==> justify-content: space-between....!@!+=!... */
+  margin: 0px 45px 0px 0px;
+}
+
+.fortpomegues-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0px 45px 0px 0px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px #bfbfbf; /* offset-x | offset-y | blur-radius | color */
+}
+
+.frioulisland-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0px 45px 0px 0px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px #bfbfbf; /* offset-x | offset-y | blur-radius | color */
+}
+
+.calanques-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0px 45px 0px 0px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px #bfbfbf; /* offset-x | offset-y | blur-radius | color */
+}
+
+.notredame-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0px 45px 0px 0px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px #bfbfbf; /* offset-x | offset-y | blur-radius | color */
+}
+
+.longchamp-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0px 45px 0px 0px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px #bfbfbf; /* offset-x | offset-y | blur-radius | color */
+}
+
+.activities-img-container {
+  display: flex;
+  width: 100%;
+  height: 490px;
+  margin-right: 20px;
+}
+
+/* Gestion des hauteurs spécifiques pour certaines cards */
+.activities-img-container-fortpomegues {
+  display: flex;
+  width: 100%;
+  height: 225px;
+  margin-right: 20px;
+}
+
+.activities-img-container-frioulisland {
+  display: flex;
+  width: 100%;
+  height: 155px;
+  margin-right: 20px;
+}
+
+.activities-img-container-notredame {
+  display: flex;
+  width: 100%;
+  height: 165px;
+  margin-right: 20px;
+}
+
+.activities-img-container-longchamp {
+  display: flex;
+  width: 100%;
+  height: 215px;
+  margin-right: 20px;
+}
+
+/* Hauteur standard (60px) pour la partie texte de chaque card */
+.bloc-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  height: 60px;
+  font-size: 95%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#activities-cards img {
+  width: 100%;
+  object-fit: cover; 
+  /* (object-fit: cover) ==> Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu.
+  La taille réelle est calculée pour couvrir la zone décrite par la hauteur et la largeur de l'élément.
+  Si les ratios de l'objet et de la boîte ne correspondent pas, le contenu remplacé sera rogné.*/
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.bloc-name h3 {
+  margin: 0;
+  margin-top: 3px;
+}
+
+.vieuxport-bloc:hover {
+  background-color: #DEEBFF;
+}
+
+.fortpomegues-bloc:hover {
+  background-color: #DEEBFF;
+}
+
+.frioulisland-bloc:hover {
+  background-color: #DEEBFF;
+}
+
+.calanques-bloc:hover {
+  background-color: #DEEBFF;
+}
+
+.notredame-bloc:hover {
+  background-color: #DEEBFF;
+}
+
+.longchamp-bloc:hover {
+  background-color: #DEEBFF;
+}
+
+
+
+
+
+
 
 
 /* footer */
