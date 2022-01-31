@@ -37,11 +37,9 @@
   src: url('../assets/icones/webfonts/fa-solid-900.ttf') format('truetype');
 }
 
-
 #container { /* Tout le contenu de la page */
   width: auto; 
   min-width: 320px;
-  
 }
 
 ul {
@@ -858,8 +856,7 @@ a.clickable-card { /* Rendre toute la div clickable */
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 25px 0px 25px 0px;
-  
+  margin: 25px 0px 25px 0px; 
 }
 
 #activities-title {
@@ -1044,6 +1041,14 @@ a.clickable-card { /* Rendre toute la div clickable */
 
 @media all and (max-width: 992px) /* Pour les écrans (Tablettes) dont la largeur ne dépasse pas 992px. */
 {
+
+  .activities-bloc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0px 25px 0px; 
+  }
+
   #activities-cards {
     flex-direction: column;
     height: 400px; /* on adapte la hauteur aux tablettes */
@@ -1212,3 +1217,45 @@ a.clickable-card { /* Rendre toute la div clickable */
 
 /* footer */
 
+#footer-bloc {
+  display: flex;
+  background-color: #F2F2F2;
+  padding: 25px 35px 25px 35px;
+}
+
+#specific-width {
+  display: flex;
+  justify-content: space-between;
+  width: 73%;
+}
+
+.footer-elements ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-elements li {
+  margin-bottom: 10px;
+}
+
+.footer-elements h4 {
+  font-size: 120%;
+}
+
+.footer-elements li:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 992px) /* Pour les écrans (Tablettes) dont la largeur ne dépasse pas 992px. */
+{
+  #specific-width {
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
+
+@media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
+{
+ 
+}
