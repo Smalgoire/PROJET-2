@@ -29,7 +29,7 @@
       </header>
 
       <main>
-        <section>
+        <section id="search-and-filters">
             <div id="search-bloc">
                 <h1>Trouvez votre hébergement<br /> pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
@@ -47,10 +47,14 @@
             <div id="filter-bloc">
                 <p>Filtres</p>     
                 <div id="filters">
-                    <div class="filtericons-container"><span class="ico-background"><span id="eco-icon"></span></span><h4>Économique</h4></div>
-                    <div class="filtericons-container"><span class="ico-background"><span id="kid-icon"></span></span><h4>Familial</h4></div>
-                    <div class="filtericons-container"><span class="ico-background"><span id="love-icon"></span></span><h4>Romantique</h4></div>
-                    <div class="filtericons-container"><span class="ico-background"><span id="dog-icon"></span></span><h4>Animaux autorisés</h4></div>
+                    <div id="row-1">
+                        <div class="filtericons-container"><span class="ico-background"><span id="eco-icon"></span></span><h4>Économique</h4></div>
+                        <div class="filtericons-container"><span class="ico-background"><span id="kid-icon"></span></span><h4>Familial</h4></div>
+                    </div>   
+                    <div id="column-1">
+                        <div class="filtericons-container"><span class="ico-background"><span id="love-icon"></span></span><h4>Romantique</h4></div>
+                        <div class="filtericons-container"><span class="ico-background"><span id="dog-icon"></span></span><h4>Animaux autorisés</h4></div>
+                    </div> 
                 </div>
             </div>
             <div class="info"><span class="info-ico-background"><span id="info-icon"></span></span><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
@@ -65,7 +69,7 @@
                     <picture class="lodgings-img-container">
                             <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                             <img src="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -82,7 +86,7 @@
                     <picture class="lodgings-img-container">
                             <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
                             <img src="assets/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -99,7 +103,7 @@
                     <picture class="lodgings-img-container">
                             <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg">
                             <img src="assets/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -118,7 +122,7 @@
                     <picture class="lodgings-img-container">
                             <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
                             <img src="assets/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -135,7 +139,7 @@
                     <picture class="lodgings-img-container">
                             <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
                             <img src="assets/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -152,7 +156,7 @@
                     <picture class="lodgings-img-container">
                             <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
                             <img src="assets/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -180,7 +184,7 @@
                     <picture class="popular-img-container">
                             <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
                             <img src="assets/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -200,7 +204,7 @@
                     <picture class="popular-img-container">
                             <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg">
                             <img src="assets/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Chambres d'hôtes">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -220,7 +224,7 @@
                     <picture class="popular-img-container">
                             <source media="(max-width: 768px)" srcset="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                             <img src="assets/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -249,7 +253,7 @@
                     <picture class="activities-img-container">
                             <source media="(max-width: 768px)" srcset="assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
                             <img src="assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Le Vieux Port de Marseille">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -263,7 +267,7 @@
                         <picture class="activities-img-container-fortpomegues">
                                 <source media="(max-width: 768px)" srcset="assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
                                 <source media="(max-width: 992px)" srcset="assets/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                                <source media="(min-width: 1920px)" srcset="assets/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                                <source media="(min-width: 1920px)" srcset="assets/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
                                 <img src="assets/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Le Fort de Pomègues à Marseille">
                                 <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                                 je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -276,7 +280,7 @@
                         <picture class="activities-img-container-frioulisland">
                                 <source media="(max-width: 768px)" srcset="assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
                                 <source media="(max-width: 992px)" srcset="assets/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                                <source media="(min-width: 1920px)" srcset="assets/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                                <source media="(min-width: 1920px)" srcset="assets/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
                                 <img src="assets/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                                 <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                                 je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -290,7 +294,7 @@
                     <picture class="activities-img-container">
                             <source media="(max-width: 768px)" srcset="assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                            <source media="(min-width: 1920px)" srcset="assets/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                            <source media="(min-width: 1920px)" srcset="assets/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
                             <img src="assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Le Parc National des Calanques">
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -304,7 +308,7 @@
                         <picture class="activities-img-container-notredame">
                                 <source media="(max-width: 768px)" srcset="assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
                                 <source media="(max-width: 992px)" srcset="assets/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                                <source media="(min-width: 1920px)" srcset="assets/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                                <source media="(min-width: 1920px)" srcset="assets/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg">
                                 <img src="assets/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                                 <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                                 je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
@@ -317,7 +321,7 @@
                         <picture class="activities-img-container-longchamp">
                                 <source media="(max-width: 768px)" srcset="assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
                                 <source media="(max-width: 992px)" srcset="assets/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                                <source media="(min-width: 1920px)" srcset="assets/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                                <source media="(min-width: 1920px)" srcset="assets/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
                                 <img src="assets/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Le Parc Longchamp à Marseille">
                                 <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                                 je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
