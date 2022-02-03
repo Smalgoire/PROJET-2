@@ -22,7 +22,7 @@
         </picture>         
        <nav>
         <ul id="nav-ul">
-            <li id="lodging-anchor" class="hover-blueline"> <a href="#lodgings-plus-popular-bloc">Hébergements</a></li> <!-- Une id pour chaque ancre et une classe pour gérer le liseret bleu au survol souris */ -->
+            <li id="lodging-anchor" class="hover-blueline"> <a href="#lodgingcards-bloc">Hébergements</a></li> <!-- Une id pour chaque ancre et une classe pour gérer le liseret bleu au survol souris */ -->
             <li id="activities-anchor" class="hover-blueline"> <a href="#activities-title">Activités</a></li>
         </ul>
        </nav>
@@ -35,7 +35,7 @@
                 <p>En plein centre ville ou en pleine nature</p>
                 <div id="element-form">
                     <div class="mapmarker-container"><span class="map-marker"></span></div>
-                    <form method="post" action="">
+                    <form method="post" action="#">
                         <p>
                             <input type="text" id="search" placeholder="Marseille, France"/>
                         </p>
@@ -60,7 +60,7 @@
             <div class="info"><span class="info-ico-background"><span id="info-icon"></span></span><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
         </section>    
       <div id="lodgings-plus-popular-bloc">
-        <section class="lodgingcards-bloc">
+        <section id="lodgingcards-bloc">
             <h1>Hébergements à Marseille</h1>
             <div id="lodging-cards">
               <div id="topline-cards"> 
@@ -189,7 +189,7 @@
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
                     </picture>    
-                    <a href="#" class="popular-text-container" class="clickable-card">
+                    <a href="#" class="popular-text-container">
                     <!--Nécessité(?) de mettre 2 classes dans la même division pour rendre la card clickable-->
                         <div class="top-text" >
                             <h3>Hôtel Le soleil du matin</h3>
@@ -209,7 +209,7 @@
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
                     </picture>    
-                    <a href="#" class="popular-text-container" class="clickable-card">
+                    <a href="#" class="popular-text-container">
                     <!--Nécessité(?) de mettre 2 classes dans la même division pour rendre la card clickable-->
                         <div class="top-text" >
                             <h3>Au cœur de l'eau Chambres d'hôtes</h3>
@@ -229,7 +229,7 @@
                             <!-- Par défaut je charge l'image correspondant à une résolution pour écrans standards et 
                             je m'adapte pour les cas mobiles/tablettes et très grands écrans en chargeant des résolutions adaptées-->
                     </picture>    
-                    <a href="#" class="popular-text-container" class="clickable-card">
+                    <a href="#" class="popular-text-container">
                     <!--Nécessité(?) de mettre 2 classes dans la même division pour rendre la card clickable-->
                         <div class="top-text" >
                             <h3>Hôtel Tout bleu et Blanc</h3>
@@ -249,7 +249,7 @@
                 <h2>Activités à Marseille</h2>
             </div>
             <div id="activities-cards">
-                <a href="#" class="vieuxport-bloc" class="clickable-card">
+                <a href="#" class="vieuxport-bloc">
                     <picture class="activities-img-container">
                             <source media="(max-width: 768px)" srcset="assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
@@ -263,7 +263,7 @@
                     </div>
                 </a>
                 <div id="activities-group1">
-                    <a href="#" class="fortpomegues-bloc" class="clickable-card">
+                    <a href="#" class="fortpomegues-bloc">
                         <picture class="activities-img-container-fortpomegues">
                                 <source media="(max-width: 768px)" srcset="assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
                                 <source media="(max-width: 992px)" srcset="assets/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
@@ -276,7 +276,7 @@
                                 <h3>Fort de Pomègues</h3>
                         </div>
                     </a>
-                    <a href="#" class="frioulisland-bloc" class="clickable-card">
+                    <a href="#" class="frioulisland-bloc">
                         <picture class="activities-img-container-frioulisland">
                                 <source media="(max-width: 768px)" srcset="assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
                                 <source media="(max-width: 992px)" srcset="assets/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
@@ -290,7 +290,7 @@
                         </div>
                     </a>
                 </div>
-                <a href="#" class="calanques-bloc" class="clickable-card">
+                <a href="#" class="calanques-bloc">
                     <picture class="activities-img-container">
                             <source media="(max-width: 768px)" srcset="assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
                             <source media="(max-width: 992px)" srcset="assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
@@ -304,7 +304,7 @@
                     </div>
                 </a>
                 <div id="activities-group2">
-                    <a href="#" class="notredame-bloc" class="clickable-card">
+                    <a href="#" class="notredame-bloc">
                         <picture class="activities-img-container-notredame">
                                 <source media="(max-width: 768px)" srcset="assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
                                 <source media="(max-width: 992px)" srcset="assets/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
@@ -317,7 +317,7 @@
                                 <h3>Notre-Dame-de-la-Garde</h3>
                         </div>
                     </a>
-                    <a href="#" class="longchamp-bloc" class="clickable-card">
+                    <a href="#" class="longchamp-bloc">
                         <picture class="activities-img-container-longchamp">
                                 <source media="(max-width: 768px)" srcset="assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
                                 <source media="(max-width: 992px)" srcset="assets/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">

@@ -528,7 +528,7 @@ input[type="text"]
 
 /* Partie Principale "Hébergement à Marseille" */
 
-.lodgingcards-bloc {
+#lodgingcards-bloc {
   display: flex;
   width: 70%;
   background-color: #F2F2F2;
@@ -537,7 +537,7 @@ input[type="text"]
   padding: 15px 25px 15px 25px;
 }
 
-.lodgingcards-bloc h1 {
+#lodgingcards-bloc h1 {
   margin-left: 20px;
 }
 
@@ -738,7 +738,7 @@ a.clickable-card { /* Rendre toute la div clickable */
   décide de réduire sa fenêtre ou qu'il utilise un petit ordinateur portable mais que ça ne déclenche pas le breakpoint à 992px */
   @media all and (max-width: 1550px) {
   
-    .lodgingcards-bloc {
+    #lodgingcards-bloc {
       width: 65%;
       margin: 25px 25px 0px 25px;
     }
@@ -760,7 +760,7 @@ a.clickable-card { /* Rendre toute la div clickable */
     align-items: center;
   }
 
-  .lodgingcards-bloc {
+  #lodgingcards-bloc {
     width: 100%;
     margin: 25px 25px 0px 25px;
   }
@@ -807,7 +807,7 @@ a.clickable-card { /* Rendre toute la div clickable */
     align-items: center;
   }
 
-  .lodgingcards-bloc {
+  #lodgingcards-bloc {
     padding: 0px 35px 0px 35px;
     background-color: inherit;
   }
@@ -850,7 +850,7 @@ a.clickable-card { /* Rendre toute la div clickable */
     font-size: 105%;
   }
 
-  .lodgingcards-bloc {
+  #lodgingcards-bloc {
     background-color: inherit;
   }
 
@@ -868,7 +868,7 @@ a.clickable-card { /* Rendre toute la div clickable */
     align-items: flex-start;
   }
 
-  .lodgingcards-bloc {
+  #lodgingcards-bloc {
     padding: 0px 19px 0px 19px;
   }
 
