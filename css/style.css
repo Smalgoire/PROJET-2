@@ -1,4 +1,4 @@
-   
+
 *, *:before, *:after {
    /* box-sizing est appliqué à tous les éléments */
    /* :before & :after sont utilisés pour appliquer les propriétés CSS juste avant/après le contenu à l'intérieur de l'élément correspondant. */
@@ -23,7 +23,7 @@ body { /* Enlève la petite marge présente de base dans les navigateurs */
 }
   
 body {
-    font-family: 'Raleway', Impact, "Arial Black", Arial, Verdana, sans-serif;   
+    font-family: 'Raleway', sans-serif;   
 }
   
 body h1,h2,h3,h4,h5,h6 { /* Les titres sont légerement plus gras sur la maquette */
@@ -133,6 +133,7 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
 {
   .header-bloc {
     flex-direction: column;
+    margin: 0;
    }
 
   #logo-booki {
@@ -276,6 +277,11 @@ input[type="text"]
 
 @media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
 {
+
+  main {
+    margin: 15px 0px 20px 0px; /* Supression margin left and right pour la version mobile */
+  }
+
   #search-bloc {
     align-items: center;   
   }
@@ -353,7 +359,15 @@ input[type="text"]
   justify-content: left;
   align-items: center;
   flex-wrap: wrap;
+}
 
+#row-1 {
+  display: flex;
+}
+
+#column-1 {
+  display: flex;
+  
 }
 
 .filtericons-container {
@@ -454,10 +468,6 @@ input[type="text"]
     margin-left: 25px;
     margin-bottom: 0;
   }
-  
-  #filters {
-    flex-wrap: wrap;
-  }
 
   .filtericons-container {
     margin-top: 15px;
@@ -467,11 +477,18 @@ input[type="text"]
 
 @media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
 {
-  
+  #search-and-filters { /* centrage des éléments nécessaires pour le mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
   #filter-bloc {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 0px;
+    margin-top: 15px;
+    width: fit-content;
   }
 
   #filter-bloc p {
@@ -481,7 +498,18 @@ input[type="text"]
   }
   
   #filters {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+
+  .filtericons-container {
+    width: fit-content;
+  }
+
+  #column-1 {
+    flex-direction: column;
   }
 
   .filtericons-container {
@@ -492,7 +520,10 @@ input[type="text"]
 
   .info {
     font-size: 120%;
+    width: 90%;
+    justify-content: center;
   }
+
 }
 
 /* Partie Principale "Hébergement à Marseille" */
@@ -1264,7 +1295,6 @@ a.clickable-card { /* Rendre toute la div clickable */
     display: flex;
     background-color: #F2F2F2;
     padding: 25px 35px 35px 35px;
-    margin: 0px 35px 25px 35px;
   }
 
   #specific-width {
@@ -1295,10 +1325,6 @@ a.clickable-card { /* Rendre toute la div clickable */
 
 @media all and (max-width: 768px) /* Pour les écrans (Mobiles) dont la largeur ne dépasse pas 768px. */
 {
-
-  #footer-bloc {
-    margin: 0px 25px 15px 25px;
-  }
 
   #specific-width {
     flex-direction: column;
