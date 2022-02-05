@@ -104,6 +104,8 @@ a { /* Pas de surlignage et pas de couleur par défaut pour les liens */
   #logo-booki {
     width: 140px;
     padding: 15px 0px 15px 0px;
+    position: relative; /* on decalage légerement le logo par rapport à sa position centrée réelle car il y a un espace vide dans l'image qui fausse le centrage */
+    left: 20px;
    }
 
   nav {
@@ -261,11 +263,11 @@ input[type="text"]
   }
 
   #search-bloc p {
-    font-size: 135%;
+    font-size: 130%;
   }
   
   #search-bloc h1 {
-    font-size: 170%;
+    font-size: 148%;
   }
   
   input {
@@ -283,7 +285,8 @@ input[type="text"]
   }
 
   #search-bloc {
-    align-items: center;   
+    align-items: center;  
+    font-size: 90%; 
   }
   
   #search-bloc p {
@@ -314,13 +317,13 @@ input[type="text"]
   }
 
   input {
-    width: 275px;
+    width: 250px;
     padding-left: 25px;
   }
 
   #element-form {
     position: relative;
-    left: 30px;
+    left: 21px;
     margin-top: 15px;
   }
 
@@ -336,7 +339,7 @@ input[type="text"]
 
 }
 
-/* Partie Filtres recherche */
+/* Partie Filtres */
 
 #filter-bloc {
   display: flex;
@@ -488,13 +491,19 @@ input[type="text"]
     flex-direction: column;
     align-items: flex-start;
     margin-top: 15px;
-    width: fit-content;
+    width: auto;
   }
 
   #filter-bloc p {
-    font-size: 150%;
-    margin-left: 15px;
+    font-size: 130%;
+    margin-left: 20px;
     margin-bottom: 0;
+  }
+
+  #filter-bloc h4 {
+    font-size: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   
   #filters {
@@ -502,6 +511,8 @@ input[type="text"]
     align-items: flex-start;
     width: fit-content;
     margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 17px;
   }
 
   .filtericons-container {
@@ -519,7 +530,7 @@ input[type="text"]
   }
 
   .info {
-    font-size: 120%;
+    font-size: 100%;
     width: 90%;
     justify-content: center;
   }
